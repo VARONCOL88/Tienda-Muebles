@@ -1,0 +1,140 @@
+
+/* sniper browser */
+html {
+    box-sizing: border-box;
+    /* 1 REM es igual a 16px */
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2;
+}
+
+/* Globales */
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;        
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    font-size: 2rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.nav-principal {
+    display: flex;
+    justify-content: space-evenly;    
+    border-width: 1px;
+    margin-bottom: 15px;
+}
+
+.nav-principal a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Header y Navegacion */
+.nombre-sitio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+
+/* Categorias */
+.listado-categorias {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+    
+       
+}
+
+.contenedor h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+.listado-categorias a {
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    padding: 20px;    
+}
+
+.listado-categorias a:hover {
+    background-color: #037bc0;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* Bloque Nosotros */
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,
+     #037bc0 100%), url(../img/nosotros.jpg);
+     background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+/* footer */
+.footer {
+    background-color: rgb(219, 146, 58);
+}
