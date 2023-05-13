@@ -14,12 +14,14 @@ html {
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
+
 }
 
 /* Globales */
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;        
+    font-family: 'Open Sans', sans-serif;
+         
 }
 
 h1 {
@@ -63,7 +65,10 @@ a {
 
 
 
-
+/* Utilidades */
+.max-width-30 {
+    max-width: 30rem;
+}
 
 /* Header y Navegacion */
 .nombre-sitio {
@@ -223,7 +228,7 @@ img {
 
 }
 
-.texto-producto a {
+.btn {
     border-radius: 0.5rem;
     text-decoration: none;
     background-color: #8cbc00;
@@ -235,9 +240,10 @@ img {
     padding: 1rem;
     /* animaciones */
     transition: background-color .3s ease-out;
+    text-align: center;
 }
 
-.texto-producto a:hover {
+.btn:hover {
     background-color: #445904;
 }
 
@@ -267,4 +273,53 @@ img {
 
 .parrafo-footer{
     text-align: center;
+}
+
+/* Nosotros */
+
+.contenido-nosotros {
+    display: grid;
+    /* con autofit y los minmax puedes crear  un sitio responsive  sin mq */
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr ));
+    /* grid-template-columns: 1fr 2fr; */
+    column-gap: 4rem;
+}
+
+.nosotros-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+    
+}
+
+.entrada {
+    border-bottom: 2px solid #97ad55;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+}
+
+.entrada-meta {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.entrada-meta span{
+    color: #037bc0;
+}
+
+.entrada-meta p {
+    font-weight: 600;
+}
+
+aside a {
+    text-decoration: none;
 }
