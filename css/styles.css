@@ -323,3 +323,22 @@ img {
 aside a {
     text-decoration: none;
 }
+
+/* Galeria */
+
+.galeria {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  
+}
+
+.galeria img {
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+    
+}
