@@ -19,6 +19,11 @@ body {
 
 /* Globales */
 
+.texto-centrado {
+    text-align: center;
+}
+
+
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
          
@@ -241,10 +246,12 @@ img {
     /* animaciones */
     transition: background-color .3s ease-out;
     text-align: center;
+    border: none;
 }
 
 .btn:hover {
     background-color: #445904;
+    cursor: pointer;
 }
 
 .contenido-principal {
@@ -270,10 +277,10 @@ img {
     padding-top: 4rem; 
 }
 
-
-.parrafo-footer{
-    text-align: center;
+.parrafo-footer {
+    grid-column: 2 ;
 }
+
 
 /* Nosotros */
 
@@ -341,4 +348,56 @@ aside a {
     height: 40rem;
     object-fit: cover;
     
+}
+
+/* formulario */
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.campo {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    
+
+}
+
+.campo label {
+    flex-basis: 8rem;
+    
+}
+
+.campo input[type="text"] {
+    flex: 1;
+}
+
+.campo input[type="email"] {
+    flex: 1;
+}
+
+.campo input[type="tel"] {
+    flex: 1;
+}
+
+.campo textarea {
+    flex: 1;
 }
