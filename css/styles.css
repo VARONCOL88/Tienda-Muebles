@@ -299,20 +299,28 @@ img {
 
 }
 
-.btn {
-    border-radius: 0.5rem;
-    text-decoration: none;
-    background-color: #8cbc00;
-    color: white;
-    /* toma todo el ancho disponible si es un enlace */
-    display: block;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
-    /* animaciones */
-    transition: background-color .3s ease-out;
-    text-align: center;
-    border: none;
+.btn {   
+
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+        .btn {
+            border-radius: 0.5rem;
+            text-decoration: none;
+            background-color: #8cbc00;
+            color: white;
+            /* toma todo el ancho disponible si es un enlace */
+            display: block;
+            text-transform: uppercase;
+            font-weight: 900;
+            padding: 1rem;
+            /* animaciones */
+            transition: background-color .3s ease-out;
+            text-align: center;
+            border: none;
+            width: auto;
+        }
 }
 
 .btn:hover {
@@ -334,7 +342,7 @@ img {
     color: black;
 }
 
-.footer{
+.footer{   
    text-align: center;
 }
 
@@ -355,28 +363,48 @@ img {
 
 /* Nosotros */
 
-.contenido-nosotros {
-    display: grid;
-    /* con autofit y los minmax puedes crear  un sitio responsive  sin mq */
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr ));
-    /* grid-template-columns: 1fr 2fr; */
-    column-gap: 4rem;
+.contenido-nosotros img {
+   width: 100%;
+}
+
+@media (min-width: 768px) {
+        .contenido-nosotros {
+            display: grid;
+            /* con autofit y los minmax puedes crear  un sitio responsive  sin mq */
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr ));
+            /* grid-template-columns: 1fr 2fr; */
+            column-gap: 4rem;
+        }
 }
 
 .nosotros-texto {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
+    text-align: center;
+    padding: 5rem;
     
 }
 
 
-.contenedor-blog {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 4rem;
-    
+
+@media (min-width: 768px) {
+        .nosotros-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            text-align: center;
+            padding: 0;
+        }
 }
+
+
+@media (min-width: 768px) {
+    .contenedor-blog {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+        
+    }
+}
+
 
 .entrada {
     border-bottom: 2px solid #97ad55;
@@ -384,11 +412,17 @@ img {
     margin-bottom: 4rem;
 }
 
-.entrada-meta {
-    display: flex;
-    justify-content: space-between;
-
+@media (min-width: 768px) {
+    .entrada-meta {
+        display: flex;
+        justify-content: space-between;   
+    }
 }
+
+.entrada-meta {
+    text-align: center;    
+}
+
 
 .entrada-meta span{
     color: #037bc0;
@@ -398,26 +432,41 @@ img {
     font-weight: 600;
 }
 
+
+.entrada-texto  {
+    padding: 1rem 5rem;
+}
+
+@media (min-width: 768px) {
+        .entrada-texto {
+            padding: 0;
+        }
+}
+
 aside a {
     text-decoration: none;
 }
 
 /* Galeria */
 
-.galeria {
-  list-style: none;  
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
-  
+@media (min-width: 768px) {
+    .galeria {
+        list-style: none;  
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        
+      }
 }
+
 
 .galeria img {
     width: 40rem;
     height: 40rem;
     object-fit: cover;
+    
     
 }
 
